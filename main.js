@@ -47,7 +47,7 @@ console.log(Alejandra);
 
 class StudentP {
   // el constructor tiene a las propiedades
-  constructor({ name, age, email, coursesApproved = [] }) {
+  constructor({ name, age = undefined, email, coursesApproved = [] }) {
     this.name = name;
     this.email = email;
     this.age = age;
@@ -61,7 +61,6 @@ class StudentP {
 
 const Mirsh = new StudentP({
   name: "Mirsh",
-  age: 33,
   email: "mirsh@platzi.com",
 });
 
